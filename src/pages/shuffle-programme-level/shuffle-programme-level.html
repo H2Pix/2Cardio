@@ -1,0 +1,21 @@
+<ion-header class="opaqueHomeUser">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><span class="titleTabsPri2C">shuffleResult</span></ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+<h1>  Choix du niveau</h1>
+
+<ion-row padding><button ion-button round [navPush]="shuffleResult" class="button btn2C button-block" color="dark"><ion-icon style="color:#ff0000; font-size:25px; padding-right: 10px" name=""> |</ion-icon> Débutant</button></ion-row>
+<ion-row padding><button ion-button round [navPush]="shuffleResult" class="button btn2C button-block" color="dark"><ion-icon style="color:#ff0000; font-size:25px; padding-right: 10px" name="">||</ion-icon>Intermédiaire</button></ion-row>
+<ion-row padding><button ion-button round [navPush]="shuffleResult" class="button btn2C button-block" color="dark"><ion-icon style="color:#ff0000; font-size:25px; padding-right: 10px" name="">|||</ion-icon>Confirmé</button></ion-row>
+<ion-row padding><button ion-button round [navPush]="shuffleResult" class="button btn2C button-block" color="dark"><ion-icon style="color:#ff0000; font-size:25px; padding-right: 10px" name="">*</ion-icon>Spartiate</button></ion-row>
+<ion-row padding><button ion-button round [navPush]="shuffleResult" class="button btn2C button-block" color="dark"><ion-icon style="color:#ff0000; font-size:25px; padding-right: 10px" name="">**</ion-icon>Commando</button></ion-row>
+<ion-row padding><button ion-button round [navPush]="shuffleResult" class="button btn2C button-block" color="dark"><ion-icon style="color:#ff0000; font-size:25px; padding-right: 10px" name="">***</ion-icon>   Dead Man Row</button></ion-row>
+
+</ion-content>

@@ -1,0 +1,34 @@
+
+<ion-content padding>
+    <h1 class="btn2C" style="text-align: center;">2<span style="color: #ff0000;">.</span>CARDIO</h1>
+
+    <form id="accueil-form3" class="">
+
+      <ion-list radio-group="relationship">
+        <ion-item>
+          <ion-label><img src="img/blank.gif" class="flag flag-fr" alt="France" /></ion-label>
+          <ion-radio value="Fr" checked></ion-radio>
+        </ion-item>
+          <ion-item>
+          <ion-label><img src="img/blank.gif" class="flag flag-es" alt="Espagne" /></ion-label>
+          <ion-radio value="Es"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label><img src="img/blank.gif" class="flag flag-gb" alt="Grande-Bretagne" /></ion-label>
+          <ion-radio value="Uk"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label><img src="img/blank.gif" class="flag flag-br" alt="Brésil" /></ion-label>
+          <ion-radio value="Br"></ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <button ion-button round  [navPush]="go"  class="disable-hover button button-md button-default button-default-md button-block button-block-md" style="background-color: #ff0000;">
+        <span class="button-inner btn2C">GO</span>
+        
+      </button>
+
+
+       </form>
+
+</ion-content>

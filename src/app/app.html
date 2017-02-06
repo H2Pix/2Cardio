@@ -1,0 +1,33 @@
+<ion-menu [content]="content">
+  
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <ion-item no-lines style="background-color: #F8F8F8;">
+          <ion-avatar item-left>
+            <img src="img/imgUser.png">
+          </ion-avatar>
+          <h2>Iron Shaft</h2>
+          <p>Grade: Alu</p>
+        </ion-item>
+  </ion-title>
+    </ion-toolbar>
+           
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon [name]="p.icon" item-left style="color: #ff0000;" > </ion-icon>
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+<ion-footer>
+    <button ion-button clear [navPush]="feedback" class="btnFeedback button-block"><span><ion-icon name="chatboxes" style="color: #ff0000; font-size: 20px;"></ion-icon> Feedback / 2.C Beta 0.1</span></button>
+</ion-footer>
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,34 @@
+<ion-header class="opaqueHomeUser">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><span class="titleTabsPri2C">Equipements</span></ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h1>Equipements de ma salle</h1>
+
+
+<ion-tabs [scrollable-tabs]="selectedTabIndex" color="{{tabsColor}}" mode='{{tabsMode}}' tabsHighlight="true" tabsPlacement="{{tabsPlacement}}">
+    <ion-tab [root]="HdC" (ionSelect)="selectTab(1)" tabIcon="" tabTitle="Haut" ></ion-tab>
+	<ion-tab [root]="BdC" (ionSelect)="selectTab(2)" tabIcon="" tabTitle="Bas"></ion-tab>
+    <ion-tab [root]="PdC" (ionSelect)="selectTab(3)" tabIcon="" tabTitle="PDC"></ion-tab>
+	<ion-tab [root]="Clibre" (ionSelect)="selectTab(4)" tabIcon="" tabTitle="Libre"></ion-tab>
+</ion-tabs>
+
+   
+
+
+  <ion-fab top left>
+    <button ion-fab mini color="dark"><ion-icon name="logo-buffer"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-button color="dark"><ion-icon name="flask" style="color:#ff0000; font-size:25px; padding-right: 10px"></ion-icon>Créer un programme</button>
+      <button ion-button color="dark"><ion-icon name="shuffle" style="color:#ff0000; font-size:25px; padding-right: 10px"></ion-icon>Générer un plan</button>
+    </ion-fab-list>
+  </ion-fab>
+
+
+</ion-content>

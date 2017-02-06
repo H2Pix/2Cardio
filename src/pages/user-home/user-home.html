@@ -1,0 +1,64 @@
+
+<ion-header class="opaqueHomeUser">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><span class="titleTabsPri2C">Tableau de bord</span></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-avatar item-left>
+      <img src="http://www.ecranlarge.com/media/cache/637x252/uploads/articles/000/000/000/shaft-370-large.jpg">
+    </ion-avatar>
+    <h2>IronSide</h2>
+    <p>Grade: Alu</p>
+  </ion-item>
+
+<ion-grid>
+  <ion-row>
+    <ion-col width-50 class="">
+    <h2>Profil</h2>
+    <p>Taille : 175 cm<br>
+    Poids : 80 kg<br>
+    IMC: 26,12kg / m²</p>
+    
+    </ion-col>
+    <ion-col width-50 class="">
+    <h2>Objectif</h2>
+    <p>Préparation physique
+    Poids : 75 kg<br>
+    IMC:<span style="color: green;"> 24,82kg / m²</span></p>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-item-group>
+  <ion-item color="light"> Programmes en cours : <span style="color: #ff0000;" >1</span> </ion-item>
+  <ion-item>Programmes terminés : <span style="color: #444;">5</span></ion-item>
+</ion-item-group>
+
+
+
+<h2>Stats du mois</h2>
+    <div style="display: block">
+      <canvas baseChart
+              [datasets]="radarChartData"
+              [labels]="radarChartLabels"
+              [chartType]="radarChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)">
+      </canvas>
+    </div>
+
+
+
+<button ion-button round class="button btn2C  button-block" style="background-color: #000000; margin-top: 25px">Créer un programme</button>
+
+<button ion-button round class="button btn2C  button-block" style="background-color: #444; margin-top: 25px">Chercher un caoch</button>
+
+</ion-content>
+
+

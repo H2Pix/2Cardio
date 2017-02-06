@@ -1,0 +1,53 @@
+
+<ion-header class="opaqueSignUp">
+
+  <ion-navbar>
+    <ion-title> <span class="title2C" style="color: #fff;">3 </span><span class="title2C" style="color: #000;">/ 5</span></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<h1 class="title2C">Niveau</h1>
+<ion-list radio-group>
+
+  <ion-item>
+    <ion-label>Débutant</ion-label>
+    <ion-radio checked="true" value="1"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Intermédiaire</ion-label>
+    <ion-radio value="2"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Confirmé</ion-label>
+    <ion-radio value="3"></ion-radio>
+  </ion-item>
+
+    <ion-item>
+    <ion-label>Commando</ion-label>
+    <ion-radio value="4"></ion-radio>
+  </ion-item>
+
+    <ion-item>
+    <ion-label>Spartiate</ion-label>
+    <ion-radio value="5"></ion-radio>
+  </ion-item>
+
+</ion-list>
+
+
+
+
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <button ion-button clear [navPush]="singupStep4" class="btn2CFooter button-block ">NEXT >>> </button>
+  </ion-toolbar>
+</ion-footer>

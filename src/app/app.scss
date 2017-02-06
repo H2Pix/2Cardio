@@ -1,0 +1,121 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+@font-face {
+    font-family: 'BlackOpsOne';
+    src: url('../assets/fonts/BlackOpsOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/opensans-regular-webfont.eot');
+  src: url('../assets/fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/opensans-regular.ttf') format('truetype'),
+  url('../assets/fonts/opensans-regular.svg') format('svg');
+  font-weight: 200;
+}
+
+.opaque .toolbar-background {
+background-repeat: no-repeat;
+background-position: right top;
+background-size: 100% 100% !important;
+background-image: url("../img/formeNR.svg");
+}
+
+.opaqueHomeUser .toolbar-background {
+background-repeat: no-repeat;
+background-position: right top;
+background-size: 100% 100% !important;
+background-image: url("../img/forme.svg");
+}
+
+.opaqueSignUp .toolbar-background {
+background-repeat: no-repeat;
+background-position: right top;
+background-size: 100% 100% !important;
+background-image: url("../img/formeNR.svg");
+}
+
+.btnFeedback{
+color:#ccc;
+}
+ 
+.title2C{
+    font-family: 'BlackOpsOne';
+    letter-spacing: 2px;
+}
+
+.titleTabsPri2C{
+    font-family: 'BlackOpsOne';
+    letter-spacing: 2px;
+    text-align: right;
+    color: #fff;
+}
+
+.titleTabs2C{
+    font-family: 'BlackOpsOne';
+    letter-spacing: 2px;
+    text-align: right;
+    color: #000;
+}
+
+.titleHoraire{
+    font-family: 'BlackOpsOne';
+    letter-spacing: 2px;
+    text-align: left;
+    color: #000;
+}
+
+.btn2C{
+    font-family: 'BlackOpsOne';
+    letter-spacing: 2px;
+}
+
+.btn2CFooter{
+    font-family: 'BlackOpsOne';
+    letter-spacing: 2px;
+    color: #ff0000;
+}
+
+.liste2C_G li{
+    font-family: 'BlackOpsOne';
+    text-align: right;
+    padding-right: 25px;
+    list-style-type: none;
+}
+
+.liste2C_D li{
+    font-family: 'BlackOpsOne';
+    text-align: left;
+    list-style-type: none;
+}
+
+.h1_2C{
+    font-family: 'BlackOpsOne';
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.listFlags .item-content{
+border:solid 1px #d8d8d8;
+border-radius: 25px;
+margin-bottom: 20px;
+color: #ff0000;
+
+}
+

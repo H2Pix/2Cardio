@@ -1,0 +1,28 @@
+
+<ion-header class="opaqueHomeUser">
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><span class="titleTabsPri2C">Mes plans</span></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+
+<ion-content>
+  <h1>Training plan</h1>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      {{item.title}}
+      <div class="item-note" item-right>
+        {{item.nbSemaines}}
+      </div>
+    </button>
+  </ion-list>
+
+<button ion-button round class="button-block" color="dark">Créer un plan</button>
+</ion-content>

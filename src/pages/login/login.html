@@ -1,0 +1,35 @@
+
+<ion-header class="opaque">
+
+  <ion-navbar>
+    <ion-title><span class="title2C" style="color: #000;">Login</span></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="has-header" padding align="center">
+    <form  style="padding-top: 50px">
+        <ion-list>
+            <ion-item>
+                <ion-input type="text"  placeholder="Email" ngControl="username"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-input type="password"  placeholder="Passe" ngControl="password"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label> Se souvenir de moi</ion-label>
+                <ion-checkbox dark name="rememberMe"></ion-checkbox>
+            </ion-item>
+        </ion-list>
+        
+        <div>
+            <button ion-button block type="submit" class="button btn2C button-default button-block" style="background-color: #ff0000;margin-top: 30px;">Connexion</button>
+            
+            <button ion-button block type="submit" class="button btn2C button-default button-block" style="background-color: #3b5998; margin-top: 20px;">Facebook</button>
+            
+
+        </div>
+    </form>
+</ion-content>

@@ -1,0 +1,24 @@
+
+<ion-header class="opaqueHomeUser">
+
+  <ion-navbar>
+    <ion-title><span class="titleTabsPri2C">Planing</span></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-tabs [scrollable-tabs]="selectedTabIndex" color="{{tabsColor}}" mode='{{tabsMode}}' tabsHighlight="true" tabsPlacement="{{tabsPlacement}}">
+	<ion-tab [root]="Lundi" (ionSelect)="selectTab(1)" tabIcon="" tabTitle="Lu" style="padding: 5px;margin: 5px;"></ion-tab>
+	<ion-tab [root]="Mardi" (ionSelect)="selectTab(2)" tabIcon="" tabTitle="Ma"></ion-tab>
+	<ion-tab [root]="Mercredi" (ionSelect)="selectTab(3)" tabIcon="" tabTitle="Me"></ion-tab>
+	<ion-tab [root]="Jeudi" (ionSelect)="selectTab(4)" tabIcon="" tabTitle="Je"></ion-tab>
+	<ion-tab [root]="Vendredi" (ionSelect)="selectTab(5)" tabIcon="" tabTitle="Ve"></ion-tab>
+	<ion-tab [root]="Samedi" (ionSelect)="selectTab(6)" tabIcon="" tabTitle="Sa"></ion-tab>
+	<ion-tab [root]="Dimanche" (ionSelect)="selectTab(7)" tabIcon="" tabTitle="Di"></ion-tab>
+</ion-tabs>
+
+
+</ion-content>

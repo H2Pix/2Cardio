@@ -1,0 +1,41 @@
+<ion-header class="opaqueSignUp">
+  <ion-navbar clear class="intro_accueil">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+  <h1 class="h1_2C" style="text-align: center;">2<span style="color: #ff0000;">.</span>CARDIO</h1>
+
+      <div class="text">
+        <p style="font-family: Open Sans; text-align: center;">Le premier générateur de programmes<br> qui vous donne le contrôle <br>sur votre environnement<br>
+        <br><img center src="img/ProgScrenAcc.png">
+        </p>
+      </div>
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col width-50>
+       <button ion-button round [navPush]="signup" class="button btn2C button-default button-block" style="background-color: #000000;">Inscription</button>
+    </ion-col>
+    <ion-col width-50>
+    <button ion-button round [navPush]="login" class="button btn2C button-default button-block" style="background-color: #ff0000;">Connexion</button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+
+    
+
+</ion-content>
+
+<ion-footer>
+  
+    <button ion-button clear [navPush]="info" class="btn2C button-block ">Info</button>
+  
+</ion-footer>

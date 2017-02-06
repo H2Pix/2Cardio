@@ -1,0 +1,40 @@
+page-user-home {
+
+    h2{
+        font-family: 'BlackOpsOne';
+        letter-spacing: 2px;
+    }
+
+    .nbProgEnCours{
+        border: solid 1px #ff0000;
+        border-radius: 50%;
+	    width: 200px;
+	    height: 200px;
+    }
+
+    .numberCircle {
+    border-radius: 50%;
+    width: 25px; 
+    font-size: 18px;
+    border: 2px solid #666;
+    }
+.numberCircle span {
+    text-align: center;
+    line-height: 20px;
+    display: block;
+    }
+
+}
+
+
+
+.toolbar-title-md{
+    color: #fff;
+    text-align: right;
+    font-family: 'Open Sans';
+    font-size: 15px;
+}
+
+.bar-button{
+    color: #000;
+}

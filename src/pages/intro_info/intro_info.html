@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>intro_info</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <h1 class="btn2C" style="text-align: center;">2<span style="color: #ff0000;">.</span>CARDIO</h1>
+    
+    <p><span>Cette application te permet d’optimiser tes entrainement par rapport à ton environement. <br>Par exemple quand tu es dans ta salle de sport, l’application te permet de sélectioner les appareils qui sont à ta disposition et de générer des programmes d’entrainement selon ton objectif ou ton niveau (ce paramétrage n’est à faire qu’une fois).<br>
+    <br>Si tu choisis de suivre un programme sur plusieurs semaine à raison de 3 séances par semaine, chaque séance sera différente.<br>
+    <br>Quand le programmes se déroule tu as la possibilité de valider tes exercices étapes par étapes ou en fin de séance.<br><br>Tes résultats sont sauvegarder et tu peux consulter ta courbes de progression vers ton objectif dans l’espace Mon Compte > Mes stats. Tu peux aussi retrouver ton suivi directement sur le site <a href="#">2Cardio.com</a>, tu aussi la possibilité de créer tes programmes depuis le site.  </span>
+    </p>
+
+<ion-grid>
+  <ion-row>
+    <ion-col width-50>
+       <button ion-button round [navPush]="signup" class="button btn2C button-default button-block" style="background-color: #000000;">Inscription</button>
+    </ion-col>
+    <ion-col width-50>
+    <button ion-button round [navPush]="login" class="button btn2C button-default button-block" style="background-color: #ff0000;">Connexion</button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+  </ion-content>
+
+

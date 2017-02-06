@@ -1,0 +1,71 @@
+<ion-header class="opaqueHomeUser">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><span class="titleTabsPri2C">Club</span></ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-thumbnail item-left>
+      <img src="img/imgUser/accrosport.jpg">
+    </ion-thumbnail>
+    <h2>Accrosport</h2>
+      <p>Abonné depuis le : 26/11/2001<br>
+       N°Client : 27271216H2Pix</p>
+         
+  </ion-item>
+
+  <ion-grid>
+  <ion-row>
+    <ion-col width-50>
+      <p>
+    <ion-icon name="home"></ion-icon>
+      Saint-Julien<br>
+      49 rue Saint-Julien<br>
+      76000 Rouen<br>
+    </p>    
+    </ion-col>
+    <ion-col width-80>
+      <p>
+        <ion-icon name="call"></ion-icon> 
+        02 35 62 63 65<br>
+        <ion-icon name="mail"></ion-icon> 
+        contact@accrosport.fr
+      </p>
+  
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+    <ion-col whdth-50>
+      <button ion-button round [navPush]="horaire" class="button btn2C button-default button-block" color="dark" style="margin-top: 30px;" >Horaire</button>
+    </ion-col>
+    <ion-col width-50>
+      <button ion-button round [navPush]="planing" class="button btn2C button-default button-block" color="dark" style="margin-top: 30px;" >Planing</button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+    
+<ion-card style="text-align: center;">
+  <p style="font-style: italic; color: #ccc;">Votre score de satisfaction du moment</p>
+  <rating [(ngModel)]="rate"></rating>  
+</ion-card>
+
+
+
+<button ion-button round class="button btn2C button-default button-block" color="dark" style="margin-top: 30px;" >Suspension d'abonnement</button>
+   
+<button ion-button round class="button btn2C button-default button-block" color="danger" style="margin-top: 15px;" >Résiliation</button>
+   
+    
+   
+  
+</ion-content>

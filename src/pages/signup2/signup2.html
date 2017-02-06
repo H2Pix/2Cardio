@@ -1,0 +1,48 @@
+
+<ion-header class="opaqueSignUp">
+
+  <ion-navbar>
+    <ion-title> <span class="title2C" style="color: #fff;">2 </span><span class="title2C" style="color: #000;">/ 5</span></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<h1 class="title2C">Objectif</h1>
+<ion-list radio-group>
+
+  <ion-item>
+    <ion-label>Maigrir</ion-label>
+    <ion-radio checked="true" value="1"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Remise en forme</ion-label>
+    <ion-radio value="2"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Préparation physique</ion-label>
+    <ion-radio value="3"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Musculation</ion-label>
+    <ion-radio value="4"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Crossfit</ion-label>
+    <ion-radio value="5"></ion-radio>
+  </ion-item>
+</ion-list>
+  
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <button ion-button clear [navPush]="singupStep3" class="btn2CFooter button-block ">NEXT >>> </button>
+  </ion-toolbar>
+</ion-footer>
